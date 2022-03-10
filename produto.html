@@ -11,7 +11,7 @@
     <title>Add produto</title>
 </head>
 <body>
-    <section class="container">
+    <section class="container" onchange="produtocontroller.validRequere()">
         <div class="row">
             <div class="col-md-6 col-12">
                 <h3 class="mt-4">Adicionar produto</h3>
@@ -21,12 +21,14 @@
                         <div class="mb-3 col-md-6 col-12">
                           <label for="exampleInputEmail1" class="form-label">Nome</label>
                           <input type="text" class="form-control" id="nome"  name=""
-                           placeholder="Nome do produto">                      
+                           placeholder="Nome do produto">   
+                           <span class="texterro"> nome em branco!</span>                   
                         </div>
                         <div class="mb-3 col-md-6 col-12">
                           <label for="tipo" class="form-label">tipo</label>
                           <input type="text" class="form-control" id="tipo"  name=""
-                           placeholder="tipo do produto">                      
+                           placeholder="tipo do produto">  
+                           <span class="texterro"> nome em branco!</span>                     
                         </div>
 
                     </div>
@@ -39,7 +41,7 @@
                         </div>
                         <div class="mb-3 col-md-6 col-12">
                           <label for="cor" class="form-label">Marca</label>
-                          <input type="text" class="form-control" id="Marca"  name="marca"
+                          <input type="text" class="form-control" id="marca"  name="marca"
                            placeholder="Marca do produto">                      
                         </div>
                         <div class="mb-3 col-6 ">
